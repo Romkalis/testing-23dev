@@ -12,58 +12,46 @@
     <main class="main">
         <section class="form__section">
 
-        <h1 class="section__title">Sign Up</h1>
-        <p class="section__explanation">Create an account to continue</p>
+            <h1 class="section__title">Sign Up</h1>
+            <p class="section__explanation">Create an account to continue</p>
 
-        <form class="form" id="form">
+            <form class="form" id="form">
+
+
+                <label class="form__label" for="first-name">
+                    <input class="form__input" type="text" id="first-name" placeholder="Enter first name" required>
+                </label>
+
+
+                <label class="form__label" for="last-name">
+                    <input class="form__input" type="text" id="last-name" placeholder="Enter last name" required>
+                </label>
+
+
+                <label class="form__label" for="email">
+                    <input class="form__input" type="email" id="email" placeholder="E-mail">
+                </label>
+
+                <label class="form__label" for="password">
+                    <input class="form__input" type="password" id="password" placeholder="Password">
+                </label>
+
+                <label class="form__label" for="password-confirm">
+                    <input class="form__input" type="password" id="password-confirm" placeholder="Password again">
+                </label>
+
+                <label class="form__label" for="birth-day">
+                    <input class="form__input" type="date" id="birth-day">
+                </label>
+
+                <div class="form__buttons">
+                    <button class="form__button button--send" id="form-button" disabled>Send</button>
+                    <button class="form__button button--reset" type="reset">Reset</button>
+                </div>
+            </form>
             
-
-            <label class="form__label" for="firstName">
-
-                <input class="form__input" type="text" id="first-name" placeholder="Enter first name" maxlength="20" required>
-
-                </input>
-            </label>
-
-
-            <label class="form__label" for="last-name">
-                <input class="form__input" type="text" id="last-name" placeholder="Enter last name" required>
-
-                </input>
-            </label>
-
-
-            <label class="form__label" for="email">
-                <input class="form__input" type="email" id="email" placeholder="E-mail">
-
-                </input>
-            </label>
-
-            <label class="form__label" for="password">
-                <input class="form__input" type="password" id="password" placeholder="Password" minlength="8">
-
-                </input>
-            </label>
-
-            <label class="form__label" for="password-confirm">
-                <input class="form__input" type="password " id="password-confirm" placeholder="Password again" minlength="8">
-
-                </input>
-            </label>
-
-            <label class="form__label" for="birth-day">
-                <input class="form__input" type="date" id="birth-day" placeholder="birth-day">
-
-                </input>
-            </label>
-
-            <div class="form__buttons">
-                <button class="form__button button--send" id="form-button" disabled>Send</button>
-                <button class="form__button button--reset" type="reset">Reset</button>
-            </div>
-        </form>
-    </artice>
-
+        </section>
+        
     </main>
 
     <script src="script.js" type="module"></script>
